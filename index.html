@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="java/app.js" defer></script>
+</head>
+<body>
+    <h2 id="h2">User Login</h2>
+
+    <div class="container">
+        <form id="loginForm">
+            <input type="text" name="username" placeholder="username" id="username" required>
+
+            <div class="password-wrapper">
+                <input type="password" name="password" placeholder="password" id="password" required>
+                <button type="button" id="togglePassword" aria-label="Show password">Show</button>
+            </div>
+
+            <div class="options-row">
+                <label class="remember">
+                    <input type="checkbox" name="remember" id="remember"> Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <p id="error" style="color: red;"></p>
+
+            <input type="submit" value="Login" id="login">
+        </form>
+    </div>
+</body>
+</html>
